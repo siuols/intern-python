@@ -20,16 +20,19 @@ num1 = input("Input first number: ")
 operator = input("Mathematical operator: ")
 num2 = input("Input second number: ")
 
-#pass input data to class
-obj = Calculator(num1,num2)
+try:
+    #pass input data to class
+	obj = Calculator(num1,num2)
 
-if operator == "+":
-	print ("The Sum {} and {} is: ".format(num1,num2),obj.addition())
-elif operator == "-":
-	print ("The Diffirence {} and {} is: ".format(num1,num2),obj.subtraction())
-elif operator == "*":
-	print ("The Product {} and {} is: ".format(num1,num2),obj.multiplication())
-elif operator == "/":
-	print ("The Quotient {} and {} is: ".format(num1,num2),obj.division())
-else:
-    print("Invalid operator")
+	if operator == "+":
+		print ("The Sum {} and {} is: ".format(num1,num2),obj.addition())
+	elif operator == "-":
+		print ("The Diffirence {} and {} is: ".format(num1,num2),obj.subtraction())
+	elif operator == "*":
+		print ("The Product {} and {} is: ".format(num1,num2),obj.multiplication())
+	elif operator == "/":
+		print ("The Quotient {} and {} is: ".format(num1,num2),obj.division())
+	else:
+	    print("Invalid operator")
+except:
+    print ("Sorry you inputted incorrect data type")
