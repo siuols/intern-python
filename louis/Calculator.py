@@ -4,21 +4,21 @@ class Calculator:
 		self.num2 = num2
 
 	def addition(self):
-		return self.num1 + self.num2
+		return int(self.num1 + self.num2)
 
 	def subtraction(self):
-		return self.num1 - self.num2
+		return int(self.num1 - self.num2)
 
 	def multiplication(self):
-		return self.num1 * self.num2
+		return int(self.num1 * self.num2)
 
 	def division(self):
-		return self.num1 / self.num2
+		return int(self.num1 / self.num2)
 
 #converted from string to integer
-num1 = int(input("Input first number: "))
+num1 = input("Input first number: ")
 operator = input("Mathematical operator: ")
-num2 = int(input("Input second number: "))
+num2 = input("Input second number: ")
 
 #pass input data to class
 obj = Calculator(num1,num2)
